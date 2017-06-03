@@ -37,7 +37,7 @@
 
 
 ```
-    composer create-project laravel/laravel Laravel --prefer-dist "5.1.*"
+composer create-project laravel/laravel Laravel --prefer-dist "5.1.*"
 ```
 
 #### 2.数据库，readis等配置文件
