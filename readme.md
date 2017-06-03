@@ -40,4 +40,7 @@
     composer create-project laravel/laravel Laravel --prefer-dist "5.1.*"
 ```
 
-### 2
+### 2.数据库，readis等配置文件
+    相关配置文件在根目录的.env的文件中
+    可以通过代码getenv('APP_ENV')，拿到相关配置信息
+    
