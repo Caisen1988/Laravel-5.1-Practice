@@ -3,8 +3,8 @@
 ## 一.开发环境
 
 #### 1.代码位置：
-    * win10：C:\Users\caisen\Code
-    * ubuntu: /home/vagrant/Code/Laravel
+     win10：C:\Users\caisen\Code
+     ubuntu: /home/vagrant/Code/Laravel
 
 #### 2.本地域名：http://homestead.app/
 
