@@ -8,7 +8,7 @@
 
 #### 2.本地域名：http://homestead.app/
 
-#### 3.开启步骤：
+#### 3.开启步骤(git bash)：
     1. cd ~/Homestead && vagrant up
     2. vagrant ssh
     3. exit
@@ -49,5 +49,41 @@ composer create-project laravel/laravel Laravel --prefer-dist "5.1.*"
     yarn install  #安装相关module
     gulp 
     
- 
+#### 4. 生成静态页面控制器 --plain更加简洁的控制器
+    $ php artisan make:controller StaticPagesController
+    $ php artisan make:controller StaticPagesController --plain
+    
+#### 5.添加静态页面视图（在 resources/views 文件夹下面）
+    return view('static_pages/home');
+    
+#### 6.通用视图
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@yield('title', 'Sample App') - Laravel 入门教程</title>
+</head>
+<body>
+@yield('content')
+</body>
+</html>
+<!-- ---------------------------!>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@yield('title', 'Sample App') - Laravel 入门教程</title>
+</head>
+<body>
+@yield('content')
+</body>
+</html>
+
+
+```
+
+    
+
+    
+
     
