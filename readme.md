@@ -29,6 +29,13 @@
 #### 7.如何设置gitHub免密码登录：参考网上教程，只有git clone SSH才能密码登录，git clone 不可以，需要修改：
 
     git remote set-url origin
+    
+#### 8.运行yarn install 报错是因为虚拟机OS的原因
+    yarn --no-bin-links
+    
+#### 9.0 运行gulp报错 重新编译    
+    npm rebuild node-sass --no-bin-links
+
 
     
 ## 二.Laravel基础知识
@@ -82,6 +89,7 @@ composer create-project laravel/laravel Laravel --prefer-dist "5.1.*"
 
 ```
 
+#### 7.前端工作流
     
 
     

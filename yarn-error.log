@@ -32,5 +32,5 @@ Lockfile:
   No lockfile
 
 Trace: 
-  Error: EPROTO: protocol error, symlink '../../../buble/node_modules/acorn/bin/acorn' -> '/home/vagrant/Code/Laravel/node_modules/acorn-jsx/node_modules/.bin/acorn'
+  Error: EPROTO: protocol error, symlink '../../../acorn/bin/acorn' -> '/home/vagrant/Code/Laravel/node_modules/astw/node_modules/.bin/acorn'
       at Error (native)
