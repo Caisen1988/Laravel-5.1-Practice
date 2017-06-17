@@ -90,6 +90,32 @@ composer create-project laravel/laravel Laravel --prefer-dist "5.1.*"
 ```
 
 #### 7.前端工作流
+    gulp 
+    gulp watch
+    
+#### 8.数据库
+* 8.1 Homestead 虚拟机里的 MySQL 数据库服务器连接方式为：
+    Host: 127.0.0.1
+    Port: 33060
+    User: homestead
+    Pass: secret
+
+* 8.2 配置文件在根目录下面 .env
+
+* 8.3 数据库迁移
+
+```
+php artisan migrate
+``` 
+
+ > migrations 表。这种表是在我们在第一次执行 artisan migrate 命令时生成的，其作用是用来做迁移版本的记录。
+    
+* 8.4 数据库回滚 
+```
+    $ php artisan migrate:rollback
+``` 
+
+
     
 
     
