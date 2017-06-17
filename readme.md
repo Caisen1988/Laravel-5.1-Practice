@@ -126,7 +126,25 @@ $user->name = 'Summer'
 $user->save()   //保存后生效
 $user->update(['name'=>'Aufree'])
 ```
-    
+
+#### 10.用户资源路由(RESTful 架构)
+
+    Route::resource('users', 'UsersController');
+上面代码将等同于：
+```
+Route::get('/users', 'UsersController@index')->name('users.index');
+Route::get('/users/{user}', 'UsersController@show')->name('users.show');
+Route::get('/users/create', 'UsersController@create')->name('users.create');
+Route::post('/users', 'UsersController@store')->name('users.store');
+Route::get('/users/{user}/edit', 'UsersController@edit')->name('users.edit');
+Route::patch('/users/{user}', 'UsersController@update')->name('users.update');
+Route::delete('/users/{user}', 'UsersController@destroy')->name('users.destroy');
+```
+
+#### 11.Gravatar 头像
+> Gravatar 为 “全球通用头像”，当你在 Gravatar 的服务器上放置了自己的头像后，可通过将自己的 Gravatar 登录邮箱进行 MD5 转码，并与 Gravatar 的 URL 进行拼接来获取到自己的 Gravatar 头像。
+
+
 
     
 
