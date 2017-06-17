@@ -120,6 +120,11 @@ php artisan migrate
 php artisan tinker //进入tinker环境
 
 >>> App\Models\User::create(['name'=> 'Aufree', 'email'=>'aufree@estgroupe.com','password'=>bcrypt('password')])
+
+User::first()   //进行数据库操作
+$user->name = 'Summer'
+$user->save()   //保存后生效
+$user->update(['name'=>'Aufree'])
 ```
     
 
