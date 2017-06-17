@@ -115,7 +115,12 @@ php artisan migrate
     $ php artisan migrate:rollback
 ``` 
 
+#### 9.Tinker 操作环境
+```
+php artisan tinker //进入tinker环境
 
+>>> App\Models\User::create(['name'=> 'Aufree', 'email'=>'aufree@estgroupe.com','password'=>bcrypt('password')])
+```
     
 
     
