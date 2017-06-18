@@ -152,8 +152,11 @@ Route::delete('/users/{user}', 'UsersController@destroy')->name('users.destroy')
 #### 11.Gravatar 头像
 > Gravatar 为 “全球通用头像”，当你在 Gravatar 的服务器上放置了自己的头像后，可通过将自己的 Gravatar 登录邮箱进行 MD5 转码，并与 Gravatar 的 URL 进行拼接来获取到自己的 Gravatar 头像。
 
-
-
+#### 12. CSRF
+ * 使用 POST 方法提交表单时，Laravel 为了安全考虑，会让我们提供一个 token（令牌）来防止我们的应用受到 CSRF（跨站请求伪造）的攻击
+```   
+    {{ csrf_field() }}
+```
     
 
     
