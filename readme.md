@@ -118,6 +118,11 @@ php artisan migrate
     $ php artisan migrate:rollback
 ``` 
 
+* 8.5 数据库重置
+```    
+    $ php artisan migrate:refresh
+```    
+
 #### 9.Tinker 操作环境
 ```
 php artisan tinker //进入tinker环境
