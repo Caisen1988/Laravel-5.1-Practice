@@ -2,6 +2,9 @@
 
 ## 一.开发环境
 
+#### 0. [开发工具](https://pan.baidu.com/s/1mh94q9a#list/path=%2F)
+> 编辑器：atom 虚拟机：vartualBox vagrant
+
 #### 1.代码位置：
      win10：C:\Users\caisen\Code
      ubuntu: /home/vagrant/Code/Laravel
