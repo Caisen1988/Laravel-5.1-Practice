@@ -164,3 +164,5 @@ Route::delete('/users/{user}', 'UsersController@destroy')->name('users.destroy')
 session()->flash('success', '欢迎，您将在这里开启一段新的旅程~');
 ```
 
+#### 15.bug "Session store not set on request"
+ * 跟原码一步一步调试，发现Sesson.php文件不知道为什么变了
